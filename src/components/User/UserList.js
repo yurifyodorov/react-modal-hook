@@ -50,7 +50,7 @@ function UserTable(props) {
         </div>
         <div className="list-body">
           {data.map((row) => {
-            const { id, isActive, fullName, role, email } = row;
+            const { isActive, fullName, role, email } = row;
             return (
               <List.Item
                 className="row"
@@ -61,7 +61,6 @@ function UserTable(props) {
               >
                 <div className="left">
                   <div className="cell" style={{ width: 60 }}>
-                    {id}
                     {isActive}
                     <Toggle defaultChecked />
                   </div>

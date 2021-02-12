@@ -1,0 +1,123 @@
+@import '../../styles/main.scss';
+
+.sidebar {
+  align-items: center;
+  background: $bg-sidebar;
+  z-index: 99;
+  width: 70px !important;
+  height: 100%;
+  padding-bottom: 15px;
+  transform: translateX(-80px);
+
+  > .menu {
+    display: flex;
+    justify-content: center;
+    height: min-content;
+    background: $bg-sidebar;
+    flex: 1 0 auto;
+    
+
+    .rs-sidenav-body {
+      align-self: center;
+      width: 100%;
+    }
+  }
+
+  > .menu .item { text-transform: uppercase; }
+
+  > .menu .item,
+    .menu .item .rs-dropdown-toggle { font-weight: 500; }
+
+  > .menu .item .rs-dropdown-toggle:hover,
+    .menu .item .rs-nav-item-content:hover {
+      color: $white;
+      background: $primary !important;
+    }
+
+  > .menu .subitem .rs-dropdown-item-content:hover { background: $default-hover !important; }
+  > .menu .item:hover .rs-dropdown-menu { background: $bg-sidebar; }
+  > .menu .item .rs-dropdown-item-content:hover { background: $default-hover; }
+  > .menu .item.rs-nav-item-active:hover a { color: $white; }
+  > .menu .item.rs-nav-item-active a { color: $primary; }
+
+  .rs-dropdown-open.rs-dropdown-placement-top-start > .rs-dropdown-menu { left: 10px; }
+
+  .logo {
+    margin-top: 10px;
+
+    > .image {
+      width: 80px;
+      margin: 0 10px;
+    }
+
+    > .title { display: none; }
+  }
+
+}
+
+.sidebar.-expanded {
+  flex: 0 0 288px !important;
+  transform: translateX(0);
+
+  .logo > .title { display: block; }
+}
+
+.menu-toggle {
+  position: absolute !important;
+  top: 0;
+  left: 80px;
+  width: $sidebar-width;
+  background: transparent;
+  cursor: pointer;
+
+  .rs-nav-item-content {
+    width: $sidebar-width;
+    color: $white !important;
+    padding: 0 !important;
+  }
+
+  .rs-nav-item-content:hover,
+  .rs-nav-item-content:active,
+  .rs-nav-item-content:focus {
+    background: transparent !important;
+  }
+
+  .rs-icon {
+    width: $sidebar-width;
+    line-height: $sidebar-width;
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+.sidebar.-expanded .menu-toggle { 
+  left: calc(#{$sidebar-width-expanded} - 80px);
+
+  .rs-nav-item-content {
+    color: $primary !important;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .menu-toggle { left: 0; }
+  .menu-toggle .rs-nav-item-content { color: transparent !important; }
+}
+
+@media screen and (min-width: $lg) {
+  .menu-toggle { display: none; }
+}
+
+
+@media screen and (min-width: $md) {
+  .sidebar {
+    transform: translateX(0);
+
+    .logo > .title { display: none; }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .sidebar {
+    .logo > .title { display: block; }
+  }
+}
