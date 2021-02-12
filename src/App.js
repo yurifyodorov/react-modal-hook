@@ -1,7 +1,7 @@
 import React from "react";
-import { useModal } from "./hooks";
-import CustomModal from "./modal";
-import UserInformation from "./components/UserInformation";
+import { useModal } from "./utils/hooks/useModal";
+import CustomModal from "./components/Modal/modal";
+import UserInformation from "./components/User/UserInformation";
 
 import './App.scss';
 

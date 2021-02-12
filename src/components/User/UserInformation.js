@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import UserDetail from './UserDetail'
-import UserList from './UserList'
-import { useModalWithData } from '../hooks'
-import CustomModal from '../modal'
+import React from 'react';
+import PropTypes from 'prop-types';
+import UserDetail from './UserDetail';
+import UserList from './UserList';
+import { useModalWithData } from '../../utils/hooks/useModal';
+import CustomModal from '../Modal/modal';
 
 
 const UserInformation = props => {

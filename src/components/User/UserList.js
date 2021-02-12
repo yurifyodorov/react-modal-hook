@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import useBreakpoints from "../useBreakpoint";
+import useBreakpoints from "../../utils/hooks/useBreakpoint";
 import { List, Button, Toggle } from "rsuite";
 
 import "./User.scss";
@@ -52,7 +52,7 @@ function UserTable(props) {
           {data.map((row) => {
             const { id, isActive, fullName, role, email } = row;
             return (
-              <List.Item 
+              <List.Item
                 className="row"
                 onClick={() => {
                   setSelected(row);
@@ -81,7 +81,7 @@ function UserTable(props) {
 
                 <div className="right">
                   <div className="cell" style={{ width: 100 }}>
-                    <Button 
+                    <Button
                       appearance="link"
                       onClick={() => {
                         setSelected(row);
