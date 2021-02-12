@@ -1,9 +1,15 @@
 import React from "react";
+import { Router } from "react-router-dom";
+
+import history from "./services/history";
+import Routes from "./routes";
+
 import { useModal } from "./utils/hooks/useModal";
+
 import CustomModal from "./components/Modal/modal";
 import UserInformation from "./components/User/UserInformation";
 
-import './App.scss';
+import "./App.scss";
 
 const users = [
   {
@@ -69,6 +75,11 @@ function App() {
 
   return (
     <div className="App">
+      
+      <Router history={history}>
+        <Routes />
+      </Router>
+
       <button onClick={toggleModal}>Show Modal</button>
       <CustomModal
         title="Item Modal"
