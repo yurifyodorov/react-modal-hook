@@ -6,7 +6,7 @@ import Routes from "./routes";
 
 import "./App.scss";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Router history={history}>
