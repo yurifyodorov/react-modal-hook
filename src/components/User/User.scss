@@ -57,3 +57,48 @@
     }
   }
 }
+
+.list-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+
+  .left {
+    display: inherit;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .right {
+    display: inherit;
+    align-items: flex-end;
+
+  }
+
+  .field {
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  .field > .rs-control-label { padding-left: 5px; }
+
+  .field > .rs-picker-select {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .list-toolbar {
+    padding: 10px 20px;
+
+    .left {
+      width: auto;
+    }
+
+    .field {
+      width: 200px;
+      margin-bottom: 0 !important;
+      margin-right: 15px;
+    }
+  }
+}
