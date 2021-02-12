@@ -1,0 +1,48 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+      url('../assets/fonts/Roboto/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../assets/fonts/Roboto/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+      url('../assets/fonts/Roboto/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+      url('../assets/fonts/Roboto/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../assets/fonts/Roboto/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+      url('../assets/fonts/Roboto/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/PFDinTextCondPro/Regular/PFDinTextCondPro-Regular.woff2') format('woff2'),
+       url('../assets/fonts/PFDinTextCondPro/Regular/PFDinTextCondPro-Regular.woff') format('woff'),
+       url('../assets/fonts/PFDinTextCondPro/Regular/PFDinTextCondPro-Regular.ttf') format('ttf'),
+       url('../assets/fonts/PFDinTextCondPro/Regular/DINPro-Cond.otf') format('otf')
+}
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/PFDinTextCondPro/Medium/PFDinTextCondPro-Medium.woff2') format('woff2'),
+       url('../assets/fonts/PFDinTextCondPro/Medium/PFDinTextCondPro-Medium.woff') format('woff'),
+       url('../assets/fonts/PFDinTextCondPro/Medium/PFDinTextCondPro-Medium.ttf') format('ttf'),
+       url('../assets/fonts/PFDinTextCondPro/Medium/DINPro-CondMedium.otf') format('otf')
+}
+@font-face {
+  font-family: 'PFDinTextCondPro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/PFDinTextCondPro/Bold/PFDinTextCondPro-Bold.woff2') format('woff2')
+       url('../assets/fonts/PFDinTextCondPro/Bold/PFDinTextCondPro-Bold.woff') format('woff'),
+       url('../assets/fonts/PFDinTextCondPro/Bold/DINPro-CondBold.otf') format('otf'),
+       url('../assets/fonts/PFDinTextCondPro/Bold/PFDinTextCondPro-Bold.ttf') format('ttf')
+}

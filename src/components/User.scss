@@ -1,0 +1,59 @@
+@import '../styles/main.scss';
+
+.scroll-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.scroll-container > .user-list {
+  display: inline-block;
+  background: red;
+}
+
+.user-list {
+  .list-header > .row > .rs-list-item-content,
+  .list-body > .row > .rs-list-item-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .left { display: flex; }
+    .right { width: 65px; }
+  }
+
+  .list-header > .row { font-weight: bold; }
+
+  .list-body > .row .cell {
+    display: flex;
+    font-size: 1rem;
+  }
+
+}
+
+.user-list .row:hover {
+  cursor: pointer;
+  background: #E5E5EA;
+}
+
+@media screen and (min-width: $md) {
+  .scroll-container > .user-list {
+    .list-header > .row > .rs-list-item-content,
+    .list-body > .row > .rs-list-item-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .scroll-container > .user-list {
+    width: 100%;
+
+    .list-header > .row > .rs-list-item-content,
+    .list-body > .row > .rs-list-item-content {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
